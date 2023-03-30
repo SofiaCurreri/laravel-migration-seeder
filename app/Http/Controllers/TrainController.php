@@ -11,4 +11,10 @@ class TrainController extends Controller
         $trains = Train::all();
         return view('homepage', compact('trains'));
     }
+
+    public function getReply($bool_variable) {
+        if($bool_variable) return "Si";
+        else return "No";
+        return view('homepage', compact('trains'));
+    }
 }
