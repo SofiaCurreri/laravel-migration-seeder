@@ -24,9 +24,9 @@ return new class extends Migration
             $table->tinyInteger('num_carrozze')->nullable()->unsigned();
             $table->boolean('in_orario');
             $table->boolean('cancellato');
-            $table->timestamps();
-            // $table->timestamp(column:'created_at')->useCurrent();
-            // $table->timestamp(column:'updated_at')->useCurrent();
+            // $table->timestamps();
+            $table->timestamp(column:'created_at')->useCurrent();
+            $table->timestamp(column:'updated_at')->useCurrent();
         });
     }
 
