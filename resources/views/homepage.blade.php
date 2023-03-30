@@ -27,8 +27,8 @@
                   <li class="list-group-item">Arrivo a: {{$train->stazione_arrivo}}</li>
                   <li class="list-group-item">Orario partenza: {{$train->orario_partenza}}</li>
                   <li class="list-group-item">Orario arrivo: {{$train->orario_arrivo}}</li>
-                  <li class="list-group-item">In orario: getReply({{$train->in_orario}})</li>
-                  <li class="list-group-item">Cancellato: {{$train->cancellato}}</li>
+                  <li class="list-group-item">In orario: <?php echo $train->in_orario ? "Si" : "No"; ?></li>
+                  <li class="list-group-item">Cancellato: <?php echo $train->cancellato ? "Si" : "No"; ?></li>
                 </ul>
               </div>              
         @endforeach

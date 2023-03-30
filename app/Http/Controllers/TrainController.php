@@ -12,9 +12,4 @@ class TrainController extends Controller
         return view('homepage', compact('trains'));
     }
 
-    public function getReply($bool_variable) {
-        if($bool_variable) return "Si";
-        else return "No";
-        return view('homepage', compact('trains'));
-    }
 }
